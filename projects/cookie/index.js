@@ -117,8 +117,8 @@ function updateTable() {
     removeButton.dataset.role = 'remove-cookie';
     removeButton.dataset.cookieName = name;
     removeButton.textContent = 'Удалить';
-    nameTD.textContent = 'name';
-    valueTD.textContent = 'value';
+    nameTD.textContent = name;
+    valueTD.textContent = value;
     valueTD.classList.add('value');
     tr.append(nameTD, valueTD, removeTD);
     removeTD.append(removeButton);
