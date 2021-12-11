@@ -32,7 +32,7 @@
 import { loadAndSortTowns } from './functions';
 import './towns.html';
 
-const homeworkContainer = document.querySelector('#app'); //app homeworkContainer
+const homeworkContainer = document.querySelector('#homework-container'); //#app #homework-container
 
 /*
  Функция должна вернуть Promise, который должен быть разрешен с массивом городов в качестве значения
@@ -71,6 +71,8 @@ const filterBlock = homeworkContainer.querySelector('#filter-block');
 const filterInput = homeworkContainer.querySelector('#filter-input');
 /* Блок с результатами поиска */
 const filterResult = homeworkContainer.querySelector('#filter-result');
+
+let towns = [];
 
 retryButton.addEventListener('click', () => {
   tryToLoad();
